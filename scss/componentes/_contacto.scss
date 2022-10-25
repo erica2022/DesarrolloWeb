@@ -1,0 +1,34 @@
+
+/*hago mas chico el contenendor*/
+.contenedor-form{
+    width:80%;
+    margin: 10px auto;
+}
+
+/*le doy forma al mapa*/
+.mapa{
+    border-radius: 50px;
+    margin: 20px auto;
+}
+
+/*formato del formulario de contacto*/
+.contacto-texto{
+    @include titulo-paginas(nth($colores, 1),1.8rem, center, 5px);
+    font-family: 'Roboto', sans-serif;
+    margin: 10px 0;
+}
+
+.boton-enviar{
+    @include boton(nth($colores,1), white, 5px);
+    font-size: 1.5rem;
+    box-shadow: rgb(0 0 0/50%) 0px 8px 16px;
+    border: 1px solid nth($colores,7) ;
+    padding: 5px 15px;
+    &:hover{
+        background-color:nth($colores,5);
+    }
+}
+
+.img-contacto{
+    margin-top: 10px;
+}

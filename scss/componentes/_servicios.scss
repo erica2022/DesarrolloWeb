@@ -1,0 +1,34 @@
+.e-card{
+    @include fondo-texto(rgba(223, 219, 219, 0.486),none , 5px auto);
+    border-radius: 10px;
+    padding: 10px 5px;
+}
+
+.e-card img{
+    width: 50%;
+    height: auto
+}
+
+/*Configuracion de los distintos niveles de textos para las tarjetas de servicios*/
+.titulo-card{
+    @include contenido-texto(nth($colores, 4), 19px);
+    font-family: 'Roboto', sans-serif;
+    margin: 5px auto;
+    font-weight: bold;
+}
+
+.subtitulo-card{
+    @include contenido-texto(nth($colores, 8),17px);
+    font-family: 'Roboto', sans-serif;
+    margin: 5px auto;
+    font-weight: bold;
+}
+
+.e-texto{
+    @include contenido-texto(nth($colores, 5),17px);
+    font-family: 'Roboto', sans-serif;
+    margin: 0 20px;
+    ul{
+        list-style-type: circle;
+    }
+}

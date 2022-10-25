@@ -1,0 +1,42 @@
+@import'../base/variables';
+
+
+.texto-ppal{
+    @include contenido-texto(map-get($texto-principal,colorLetra),map-get($texto-principal,size));
+    font-family: 'rufus';
+    padding: 20px 20px;
+    @include fondo-texto(nth($colores, 6),10px, map-get($texto-principal,margenes));
+}
+
+.texto-secundario{
+    @include contenido-texto(map-get($texto-secundario,colorLetra),map-get($texto-secundario,size));
+    font-family: 'Roboto', sans-serif;
+    margin: map-get($texto-secundario,margenes);
+}
+
+/*Imagenes*/
+.imagen{
+    @include imagen(100%,10px);
+
+}
+
+.imagen-chica{
+    @include imagen(60%,10px);
+    margin-top: 20px;
+}
+
+.fondo{
+    @include fondo-texto(rgba(82, 80, 80, 0.219),30px,20px);
+}
+
+/*CONFIGURACION DEL TEXTO DEL CAROUSEL*/
+.carousel-texto {
+    position: absolute;
+    right: 15%;
+    bottom: 12px;
+    left: 15%;
+    padding: 12px;
+    @include contenido-texto(nth($colores, 9), 20px);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}

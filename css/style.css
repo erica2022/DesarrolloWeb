@@ -1,0 +1,380 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.contenedor-demo, header ul, .contenedor-redes, .contenedor-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contenedor-links-demo {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Configuro tamaño de imagen y estilo de borde*/
+/*Configuro los textos de acuerdo al color y tamaño*/
+/*se usa en todas los titulos de cada pagina de la web*/
+/*config del boton*/
+/*aca configuro las transformaciones para que funcione en cada navegador*/
+/*Colores que uso en el curso*/
+/* Segun el tipo de texto que sea tienen valores distintos*/
+/*Colores que uso en el curso*/
+/*ACA PUSE CLASES QUE LAS USO EN TODAS LAS PAGINAS*/
+/*Se usa en la mayoria de las paginas para darle un fondo de madera*/
+.fondo-pagina {
+  background-image: url("../imagenes/fondo_main.webp");
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+/*este contenedor se usa en todas las paginas para darle un maximo en el ancho*/
+.contenedor-pag {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0px auto;
+}
+
+/* espacio de comienzo de cada pagina*/
+.espacio-inicio {
+  margin-top: 150px;
+}
+
+.titulo {
+  color: #0e8f60;
+  font-size: 26px;
+  text-align: center;
+  padding-top: 20px;
+  font-family: "rufus-bold";
+  font-weight: bold;
+  margin: 5px 20px;
+}
+
+.sub-titulo {
+  color: #373837;
+  font-size: 21px;
+  text-align: center;
+  padding-top: 5px;
+  font-family: "rufus-bold";
+  margin: 5px 20px;
+}
+
+/*formato de los vinculos*/
+.links {
+  color: #8dd18d;
+  text-decoration: underline;
+}
+
+/*Tipografias*/
+@font-face {
+  font-family: "rufus";
+  src: url("../../fuentes/FSRufus.otf") format("otf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "rufus-bold";
+  src: url("../../fuentes/FSRufus-Bold.otf") format("otf");
+  font-display: swap;
+}
+/* declaro el valor del REM*/
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Colores que uso en el curso*/
+footer {
+  background-color: #373837;
+  padding: 10px 0;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+footer a {
+  margin: 10px 10px;
+}
+
+/*Acomodo los iconos de las redes en linea*/
+.contenedor-footer {
+  justify-content: space-around;
+}
+
+.icono-redes:hover {
+  -webkit-transform: translateY(-3px);
+  -o-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  transform: translateY(-3px);
+  opacity: 50%;
+}
+
+.contenedor-redes {
+  width: 100%;
+  justify-content: center;
+}
+
+.texto-footer {
+  color: #d7dad6;
+  font-size: 1.4rem;
+  font-family: "Roboto", sans-serif;
+  margin: 10px 10px;
+}
+
+/*Colores que uso en el curso*/
+header {
+  background-color: #0e8f60;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 16px;
+  z-index: 6;
+}
+header ul li {
+  list-style: none;
+}
+header ul li a {
+  color: #d2d6d296;
+  font-size: 2.2rem;
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  padding: 10px 10px;
+  margin: 10px 10px;
+}
+header ul li a:hover {
+  color: #373837;
+}
+
+.logo {
+  margin: 10px 20px;
+  transition: all 0.5s;
+}
+.logo:hover {
+  -webkit-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 80%;
+}
+
+/*Colores que uso en el curso*/
+.texto-ppal {
+  color: #018655;
+  font-size: 2.1rem;
+  font-family: "rufus";
+  padding: 20px 20px;
+  background-color: #d2d6d296;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+.texto-secundario {
+  color: #7a7777;
+  font-size: 1.8rem;
+  font-family: "Roboto", sans-serif;
+  margin: 10px 17px;
+}
+
+/*Imagenes*/
+.imagen {
+  width: 100%;
+  border-radius: 10px;
+  height: auto;
+}
+
+.imagen-chica {
+  width: 60%;
+  border-radius: 10px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.fondo {
+  background-color: rgba(82, 80, 80, 0.219);
+  border-radius: 30px;
+  margin: 20px;
+}
+
+/*CONFIGURACION DEL TEXTO DEL CAROUSEL*/
+.carousel-texto {
+  position: absolute;
+  right: 15%;
+  bottom: 12px;
+  left: 15%;
+  padding: 12px;
+  color: #b4d1c0;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+/*hago mas chico el contenendor*/
+.contenedor-form {
+  width: 80%;
+  margin: 10px auto;
+}
+
+/*le doy forma al mapa*/
+.mapa {
+  border-radius: 50px;
+  margin: 20px auto;
+}
+
+/*formato del formulario de contacto*/
+.contacto-texto {
+  color: #0e8f60;
+  font-size: 1.8rem;
+  text-align: center;
+  padding-top: 5px;
+  font-family: "Roboto", sans-serif;
+  margin: 10px 0;
+}
+
+.boton-enviar {
+  background-color: #0e8f60;
+  border-radius: 5px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 16px;
+  border: 1px solid #d7dad6;
+  padding: 5px 15px;
+}
+.boton-enviar:hover {
+  background-color: #373837;
+}
+
+.img-contacto {
+  margin-top: 10px;
+}
+
+.e-card {
+  background-color: rgba(223, 219, 219, 0.486);
+  border-radius: none;
+  margin: 5px auto;
+  border-radius: 10px;
+  padding: 10px 5px;
+}
+
+.e-card img {
+  width: 50%;
+  height: auto;
+}
+
+/*Configuracion de los distintos niveles de textos para las tarjetas de servicios*/
+.titulo-card {
+  color: #f7a25c;
+  font-size: 19px;
+  font-family: "Roboto", sans-serif;
+  margin: 5px auto;
+  font-weight: bold;
+}
+
+.subtitulo-card {
+  color: #7a7777;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  margin: 5px auto;
+  font-weight: bold;
+}
+
+.e-texto {
+  color: #373837;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  margin: 0 20px;
+}
+.e-texto ul {
+  list-style-type: circle;
+}
+
+/*acomodo cada logo de la empresa*/
+.logo-empresa {
+  margin: 50px auto;
+}
+
+/* contenedor en donde iran los logos de los clientes*/
+.contenedor-espacio {
+  width: 60%;
+  margin-top: 20px;
+}
+
+/*ACA VAN LOS LINKS A LAS PAGINAS CON LAS DEMOS*/
+.contenedor-links-demo {
+  margin-left: 20px;
+  background-color: #e2e0e0;
+  border-radius: 10px;
+  padding: 20px 30px;
+  width: 350px;
+  list-style-image: url(../imagenes/vineta.png);
+}
+.contenedor-links-demo ul {
+  line-height: 30px;
+}
+
+/*este va a contener la imagen y un recuadro con los links a las demos*/
+.contenedor-demo {
+  justify-content: center;
+}
+
+/*links a las paginas de demos*/
+.link-demos {
+  color: #018655;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.7rem;
+  text-decoration: none;
+}
+.link-demos:hover {
+  color: #7a7777;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Estas clases son pra que al roll over de las imagenes de las demos me muestre el texto con el nombre de la categoria*/
+.contenedor-rollover {
+  position: relative;
+}
+.contenedor-rollover:hover .imagen-demo {
+  opacity: 0.3;
+}
+.contenedor-rollover:hover .middle {
+  opacity: 1;
+}
+
+.imagen-demo {
+  opacity: 1;
+  display: block;
+  width: 170px;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  margin: 10px 10px;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.texto-rollover {
+  color: #373837;
+  font-size: 2.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  padding: 16px 32px;
+}
+
+/*# sourceMappingURL=style.css.map */

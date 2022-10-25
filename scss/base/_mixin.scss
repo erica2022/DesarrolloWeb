@@ -1,0 +1,42 @@
+/* Configuro tamaño de imagen y estilo de borde*/
+@mixin imagen($tamanio, $border) {
+    width: $tamanio;
+    border-radius: $border;
+    height: auto;
+}
+
+/*Configuro los textos de acuerdo al color y tamaño*/
+@mixin contenido-texto ($color,$tamanio){
+    color: $color;
+    font-size: $tamanio;
+} 
+
+@mixin fondo-texto ($color,$border,$margen){
+    background-color: $color;
+    border-radius: $border;
+    margin: $margen;
+}
+
+/*se usa en todas los titulos de cada pagina de la web*/
+@mixin titulo-paginas ($color,$tamanio,$alineacion,$espacio){
+    color: $color;
+    font-size: $tamanio;
+    text-align: $alineacion;
+    padding-top: $espacio;
+}
+
+/*config del boton*/
+@mixin boton ($colorFondo,$colorLetra,$borde){
+    background-color:$colorFondo;
+    border-radius: $borde;
+    color: $colorLetra;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*aca configuro las transformaciones para que funcione en cada navegador*/
+@mixin animaciones($transformaciones) {
+    -webkit-transform: $transformaciones;
+    -o-transform: $transformaciones;
+    -moz-transform: $transformaciones;
+    transform: $transformaciones;
+}

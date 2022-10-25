@@ -1,0 +1,71 @@
+/*ACA VAN LOS LINKS A LAS PAGINAS CON LAS DEMOS*/
+.contenedor-links-demo{
+    @extend %contenedores-flex-columna;
+    margin-left: 20px;
+    background-color: rgb(226, 224, 224);
+    border-radius: 10px;
+    padding: 20px 30px;
+    width: 350px;
+    list-style-image: url(../imagenes/vineta.png);
+      ul{
+        line-height: 30px;
+      }
+}
+
+/*este va a contener la imagen y un recuadro con los links a las demos*/
+.contenedor-demo{
+    @extend %contenedores-flex-fila;
+    justify-content: center;
+}
+
+/*links a las paginas de demos*/
+.link-demos{
+    color: nth($colores, 3);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7rem;
+    text-decoration: none;
+    &:hover{
+        color: nth($colores, 8);
+        text-decoration: underline;
+        font-weight: bold;
+    }
+}
+
+/* Estas clases son pra que al roll over de las imagenes de las demos me muestre el texto con el nombre de la categoria*/
+.contenedor-rollover {
+    position: relative;
+      &:hover .imagen-demo{
+        opacity: 0.3;
+      }
+      &:hover .middle{
+        opacity: 1;
+      }
+  }
+  
+  .imagen-demo {
+    opacity: 1;
+    display: block;
+    width: 170px;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    margin: 10px 10px;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include animaciones(translate(-50%, -50%));
+    text-align: center;
+  }
+  
+
+  .texto-rollover {
+    @include contenido-texto(nth($colores, 5), 2.5rem);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding: 16px 32px;
+  }

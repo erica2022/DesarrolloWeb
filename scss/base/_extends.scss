@@ -1,0 +1,12 @@
+
+%contenedores-flex-fila{    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+%contenedores-flex-columna{    
+    display: flex;
+    flex-direction: column;
+}

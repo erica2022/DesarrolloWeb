@@ -1,0 +1,41 @@
+@import './variables';
+/*ACA PUSE CLASES QUE LAS USO EN TODAS LAS PAGINAS*/
+
+/*Se usa en la mayoria de las paginas para darle un fondo de madera*/
+.fondo-pagina{
+    background-image: url('../imagenes/fondo_main.webp');
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+/*este contenedor se usa en todas las paginas para darle un maximo en el ancho*/
+.contenedor-pag{
+    width: 100%;
+    max-width: 1500px;
+    margin: 0px auto;
+}
+
+/* espacio de comienzo de cada pagina*/
+.espacio-inicio{
+    margin-top: 150px;
+}
+
+.titulo{
+    @include titulo-paginas(nth($colores, 1),26px, center, 20px);
+    font-family: 'rufus-bold';
+    font-weight: bold;
+    margin: 5px 20px;
+}
+
+.sub-titulo{
+    @include titulo-paginas(nth($colores, 5),21px, center, 5px);
+    font-family: 'rufus-bold';
+    margin: 5px 20px;
+}
+
+/*formato de los vinculos*/
+.links{
+    color: nth($colores, 2);
+    text-decoration:underline;
+}
