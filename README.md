@@ -3,7 +3,7 @@
 
 - 🔭 I’m currently working on **Grupo Apis**
 
-- 🌱 I’m currently learning **Desarrollo Web Full Stack**
+- 🌱 I’m a Front End Developwe React**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
